@@ -3,7 +3,7 @@
     <title>SpeedyLom Recipes</title>
     <link href="https://speedylom.github.io/recipes/feed.xml" rel="self" />
     <link href="https://speedylom.github.io/recipes" />
-    <updated>2025-05-31T12:49:52+01:00</updated>
+    <updated>2025-05-31T14:09:18+01:00</updated>
     <author>
         <name>SpeedyLom</name>
     </author>
@@ -64,6 +64,60 @@
       </tr>
     </tbody>
 </table></div>
+
+    <h2 id="calculations">
+      Calculations
+    </h2>
+
+  <p>
+    To calculate another amount use the below values.
+  </p>
+<div><table>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>3.13</td>
+        <td>1.0</td>
+      </tr>
+    </tbody>
+</table>
+<dl>
+  <dt>
+    <label for="uncooked">Uncooked (g)</label>
+  </dt>
+  <dt>
+    <input id="uncooked" name="uncooked" type="text" placeholder="75"/>
+  </dt>
+  <dt>Cooked (g)</dt>
+  <dd id="cooked">-</dd>
+  <dt>Carbohydrates (g)</dt>
+  <dd id="carbs">-</dd>
+</dl>
+<script type="text/javascript">
+    const carbsPerOneGram = 32.6/100;
+    const cookedPerOneGram = 3.13;
+
+    const carbs = document.getElementById('carbs');
+    const cooked = document.getElementById('cooked');
+    const uncooked = document.getElementById('uncooked');
+
+uncooked.addEventListener('input', (event) => {
+	if (uncooked == '') {
+  	return;
+  }
+  
+  let cookedGrams = uncooked.value * cookedPerOneGram;
+  cooked.textContent = Number(cookedGrams.toFixed(0));;
+  carbs.textContent = Number((cookedGrams * carbsPerOneGram).toFixed(1));
+});
+
+</script>
+
+</div>
+
+  <p>
+    
+  </p>
             ]]>
         </content>
     </entry>
