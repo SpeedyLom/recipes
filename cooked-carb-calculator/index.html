@@ -1,0 +1,68 @@
+<!DOCTYPE html><html lang="en-gb"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Cooked carb calculator - SpeedyLom Recipes</title><meta name="description" content="A calculator to help with packets that display carbohydrates based on the&hellip;"><meta name="generator" content="Publii Open-Source CMS for Static Site"><link rel="canonical" href="https://speedylom.github.io/recipes/cooked-carb-calculator/"><link rel="alternate" type="application/atom+xml" href="https://speedylom.github.io/recipes/feed.xml" title="SpeedyLom Recipes - RSS"><link rel="alternate" type="application/json" href="https://speedylom.github.io/recipes/feed.json" title="SpeedyLom Recipes - JSON"><meta property="og:title" content="Cooked carb calculator"><meta property="og:site_name" content="SpeedyLom Recipes"><meta property="og:description" content="A calculator to help with packets that display carbohydrates based on the&hellip;"><meta property="og:url" content="https://speedylom.github.io/recipes/cooked-carb-calculator/"><meta property="og:type" content="article"><link rel="preload" href="https://speedylom.github.io/recipes/assets/dynamic/fonts/jetbrainsmono/jetbrainsmono.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://speedylom.github.io/recipes/assets/dynamic/fonts/robotoflex/robotoflex.woff2" as="font" type="font/woff2" crossorigin><link rel="stylesheet" href="https://speedylom.github.io/recipes/assets/css/style.css?v=5b402bc530615e32a98f6b62f807cf74"><script type="application/ld+json">{"@context":"http://schema.org","@type":"Article","mainEntityOfPage":{"@type":"WebPage","@id":"https://speedylom.github.io/recipes/cooked-carb-calculator/"},"headline":"Cooked carb calculator","datePublished":"2025-05-31T18:21+01:00","dateModified":"2025-05-31T18:21+01:00","description":"A calculator to help with packets that display carbohydrates based on the&hellip;","author":{"@type":"Person","name":"SpeedyLom","url":"https://speedylom.github.io/recipes/authors/speedylom/"},"publisher":{"@type":"Organization","name":"SpeedyLom"}}</script><noscript><style>img[loading] {
+                    opacity: 1;
+                }</style></noscript></head><body class="page-template"><div class="container"><div class="left-bar"><div class="left-bar__inner"><header class="header"><a class="logo" href="https://speedylom.github.io/recipes/">SpeedyLom Recipes</a><nav class="navbar"><button class="navbar__toggle" aria-label="Menu" aria-haspopup="true" aria-expanded="false"><span class="navbar__toggle__box"><span class="navbar__toggle__inner">Menu</span></span></button><ul class="navbar__menu"><li class="active"><a href="https://speedylom.github.io/recipes/cooked-carb-calculator/" target="_self" aria-label="Cooked carb calculator"><span>Cooked carb calculator</span></a></li></ul></nav><a class="logo logo--atbottom" href="https://speedylom.github.io/recipes/">SpeedyLom Recipes</a></header></div></div><main class="main page"><article class="content"><div class="main__inner"><div class="content__meta"><div class="content__author"><div><a href="https://speedylom.github.io/recipes/authors/speedylom/" class="content__author__name">SpeedyLom</a></div></div><div class="content__date"><time datetime="2025-05-31T18:21">May 31, 2025</time></div></div><header class="content__header"><h1 class="content__title">Cooked carb calculator</h1><p class="content__lead"></p></header><div class="content__entry"><p>A calculator to help with packets that display carbohydrates based on the weight of cooked values.</p><h2 id="calculator">Calculator</h2><p>Fill in the information from the packet then enter the portion size for a calculated carbohydrates value.</p><h3 id="information-from-packet">Information from packet</h3><p class="msg msg--info">Values when cooked according to instructions.</p><div><dl><dt><label for="example-uncooked">Uncooked (g)</label></dt><dd><input id="example-uncooked" name="example-uncooked" type="number" min="0" step="1" placeholder="75"></dd><dt><label for="example-uncooked">Cooked (g)</label></dt><dd><input id="example-cooked" name="example-cooked" type="number" min="0" step="1" placeholder="170"></dd><dt><label for="carbs-per-100g">Carbohydrates per 100g</label></dt><dd><input id="carbs-per-100g" name="carbs-per-100g" type="number" min="0" step="0.1" placeholder="31.5"></dd></dl><h3>Portion calculation</h3><dl><dt><label for="uncooked">Uncooked (g)</label></dt><dd><input id="uncooked" name="uncooked" type="number" min="0" step="1" placeholder="75"></dd><dt>Cooked (g)</dt><dd id="cooked">-</dd><dt>Carbohydrates (g)</dt><dd id="carbs">-</dd></dl><script type="text/javascript">const carbsPer100Gram = document.getElementById('carbs-per-100g');
+const exampleCooked = document.getElementById('example-cooked');
+const exampleUncooked = document.getElementById('example-uncooked');
+
+const carbs = document.getElementById('carbs');
+const cooked = document.getElementById('cooked');
+const uncooked = document.getElementById('uncooked');
+
+carbsPer100Gram.addEventListener('input', (event) => {
+	calculateCarbs();
+});
+
+exampleCooked.addEventListener('input', (event) => {
+	calculateCarbs();
+});
+
+exampleUncooked.addEventListener('input', (event) => {
+	calculateCarbs();
+});
+
+uncooked.addEventListener('input', (event) => {
+	calculateCarbs();
+});
+
+function calculateCarbs() {
+	if (carbsPer100Gram.value == '' || carbsPer100Gram.value < 1) {
+  	resetCalculation();
+    return;
+  }
+
+	if (exampleCooked.value == '' || exampleCooked.value < 1) {
+  	resetCalculation();
+    return;
+  }
+
+	if (exampleUncooked.value == '' || exampleUncooked.value < 1) {
+  	resetCalculation();
+    return;
+  }
+
+	if (uncooked.value == '' || uncooked.value < 1) {
+  	resetCalculation();
+    return;
+  }
+
+	const carbsPerOneGram = carbsPer100Gram.value / 100;
+  const cookedPerOneGram = exampleCooked.value / exampleUncooked.value;
+
+  let cookedGrams = uncooked.value * cookedPerOneGram;
+  cooked.textContent = Number(cookedGrams.toFixed(0));
+  carbs.textContent = Number((cookedGrams * carbsPerOneGram).toFixed(1));
+}
+
+function resetCalculation() {
+	cooked.textContent = '-';
+  carbs.textContent = '-';
+}</script></div></div><footer class="content__footer"><div class="content__last-updated">This article was updated on <time datetime="2025-05-31T18:21">May 31, 2025</time></div><div class="content__share"></div></footer></div></article></main><div class="right-bar"><div class="right-bar__inner"><div class="sidebar"><section class="box authors"><h3 class="box__title">Authors</h3><ul class="authors__cotainer"><li class="authors__item"><div><a href="https://speedylom.github.io/recipes/authors/speedylom/" class="authors__title">SpeedyLom</a> <span class="authors__meta">Post: 2</span></div></li></ul></section><section class="box tags"><h3 class="box__title">Recommended Topics</h3><ul class="tags__list"><li class="tags__item"><a href="https://speedylom.github.io/recipes/tags/side/" class="btn btn--gray">Side <sup>(2)</sup></a></li></ul></section><section class="box newsletter"><h3 class="box__title">Subscribe to Mono</h3><p class="newsletter__desc">Sign up to receive email updates and to hear what's going on with us!</p><form>...</form></section><div class="box copyright">Powered by Publii - Open-Source CMS for Static Websites</div></div></div></div></div><script defer="defer" src="https://speedylom.github.io/recipes/assets/js/scripts.min.js?v=b2d91bcadbf5db401b76eb5bb3092eb7"></script><script>var images = document.querySelectorAll('img[loading]');
+        for (var i = 0; i < images.length; i++) {
+            if (images[i].complete) {
+                images[i].classList.add('is-loaded');
+            } else {
+                images[i].addEventListener('load', function () {
+                    this.classList.add('is-loaded');
+                }, false);
+            }
+        }</script></body></html>

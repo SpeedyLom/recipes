@@ -3,7 +3,7 @@
     <title>SpeedyLom Recipes</title>
     <link href="https://speedylom.github.io/recipes/feed.xml" rel="self" />
     <link href="https://speedylom.github.io/recipes" />
-    <updated>2025-05-31T14:50:22+01:00</updated>
+    <updated>2025-05-31T16:28:27+01:00</updated>
     <author>
         <name>SpeedyLom</name>
     </author>
@@ -88,7 +88,7 @@
     <label for="uncooked">Uncooked (g)</label>
   </dt>
   <dt>
-    <input id="uncooked" name="uncooked" type="text" placeholder="75"/>
+    <input id="uncooked" name="uncooked" type="number" min="0" step="1" placeholder="75"/>
   </dt>
   <dt>Cooked (g)</dt>
   <dd id="cooked">-</dd>
@@ -104,15 +104,17 @@
     const uncooked = document.getElementById('uncooked');
 
     uncooked.addEventListener('input', (event) => {
-	  if (uncooked == '') {
+    
+	  if (uncooked.value == '' || uncooked.value < 1) {
+ 	      cooked.textContent = '-';
+  	      carbs.textContent = '-';
   	    return;
       }
   
       let cookedGrams = uncooked.value * cookedPerOneGram;
-      cooked.textContent = Number(cookedGrams.toFixed(0));;
+      cooked.textContent = Number(cookedGrams.toFixed(0));
       carbs.textContent = Number((cookedGrams * carbsPerOneGram).toFixed(1));
     });
-
 </script>  
 </div>
             ]]>
@@ -202,7 +204,7 @@
     <label for="uncooked">Uncooked (g)</label>
   </dt>
   <dt>
-    <input id="uncooked" name="uncooked" type="text" placeholder="75"/>
+    <input id="uncooked" name="uncooked" type="number" min="0" step="1" placeholder="75"/>
   </dt>
   <dt>Cooked (g)</dt>
   <dd id="cooked">-</dd>
@@ -218,15 +220,17 @@
     const uncooked = document.getElementById('uncooked');
 
     uncooked.addEventListener('input', (event) => {
-	  if (uncooked == '') {
+    
+	  if (uncooked.value == '' || uncooked.value < 1) {
+ 	      cooked.textContent = '-';
+  	      carbs.textContent = '-';
   	    return;
       }
   
       let cookedGrams = uncooked.value * cookedPerOneGram;
-      cooked.textContent = Number(cookedGrams.toFixed(0));;
+      cooked.textContent = Number(cookedGrams.toFixed(0));
       carbs.textContent = Number((cookedGrams * carbsPerOneGram).toFixed(1));
     });
-
 </script>
 
 </div>
