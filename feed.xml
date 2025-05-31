@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/">
+    <title>SpeedyLom Recipes</title>
+    <link href="https://speedylom.github.io/recipes/feed.xml" rel="self" />
+    <link href="https://speedylom.github.io/recipes" />
+    <updated>2025-05-31T12:04:01+01:00</updated>
+    <author>
+        <name>SpeedyLom</name>
+    </author>
+    <id>https://speedylom.github.io/recipes</id>
+
+    <entry>
+        <title>Basmati rice</title>
+        <author>
+            <name>SpeedyLom</name>
+        </author>
+        <link href="https://speedylom.github.io/recipes/basmati-rice.html"/>
+        <id>https://speedylom.github.io/recipes/basmati-rice.html</id>
+        <media:content url="https://speedylom.github.io/recipes/media/posts/1/rice-2.avif" medium="image" />
+            <category term="Side"/>
+
+        <updated>2025-05-31T11:59:04+01:00</updated>
+            <summary>
+                <![CDATA[
+                        <img src="https://speedylom.github.io/recipes/media/posts/1/rice-2.avif" alt="1kg packet of Tesco basmati rice" />
+                    Portions Tesco basmati rice Uncooked (g) Cooked (g) Carbohydrates (g) 22 70&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                    <p><img src="https://speedylom.github.io/recipes/media/posts/1/rice-2.avif" class="type:primaryImage" alt="1kg packet of Tesco basmati rice" /></p>
+                
+    <h2 id="portions">
+      Portions
+    </h2>
+
+    <figure class="post__image post__image--center">
+      <img loading="lazy" src="https://speedylom.github.io/recipes/media/posts/1/rice.avif" height="null" width="null" alt="1kg packet of Tesco basmati rice" >
+      <figcaption>Tesco basmati rice</figcaption>
+    </figure>
+<div><table>
+    <thead>
+        <tr>
+            <th>Uncooked (g)</th>
+            <th>Cooked (g)</th>
+            <th>Carbohydrates (g)</th>
+          </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>22</td>
+        <td>70</td>
+        <td>23</td>
+      </tr>
+      <tr>
+        <td>55</td>
+        <td>170</td>
+        <td>55</td>
+      </tr>
+      <tr>
+        <td>75</td>
+        <td>235</td>
+        <td>76.6</td>
+      </tr>
+    </tbody>
+</table></div>
+            ]]>
+        </content>
+    </entry>
+</feed>

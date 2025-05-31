@@ -1,0 +1,29 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "SpeedyLom Recipes",
+    "description": "",
+    "home_page_url": "https://speedylom.github.io/recipes",
+    "feed_url": "https://speedylom.github.io/recipes/feed.json",
+    "user_comment": "",
+    "author": {
+        "name": "SpeedyLom"
+    },
+    "items": [
+        {
+            "id": "https://speedylom.github.io/recipes/basmati-rice.html",
+            "url": "https://speedylom.github.io/recipes/basmati-rice.html",
+            "title": "Basmati rice",
+            "summary": "Portions Tesco basmati rice Uncooked (g) Cooked (g) Carbohydrates (g) 22 70&hellip;",
+            "content_html": "\n    <h2 id=\"portions\">\n      Portions\n    </h2>\n\n    <figure class=\"post__image post__image--center\">\n      <img loading=\"lazy\" src=\"https://speedylom.github.io/recipes/media/posts/1/rice.avif\" height=\"null\" width=\"null\" alt=\"1kg packet of Tesco basmati rice\" >\n      <figcaption>Tesco basmati rice</figcaption>\n    </figure>\n<div><table>\n    <thead>\n        <tr>\n            <th>Uncooked (g)</th>\n            <th>Cooked (g)</th>\n            <th>Carbohydrates (g)</th>\n          </tr>\n    </thead>\n    <tbody>\n      <tr>\n        <td>22</td>\n        <td>70</td>\n        <td>23</td>\n      </tr>\n      <tr>\n        <td>55</td>\n        <td>170</td>\n        <td>55</td>\n      </tr>\n      <tr>\n        <td>75</td>\n        <td>235</td>\n        <td>76.6</td>\n      </tr>\n    </tbody>\n</table></div>",
+            "image": "https://speedylom.github.io/recipes/media/posts/1/rice-2.avif",
+            "author": {
+                "name": "SpeedyLom"
+            },
+            "tags": [
+                   "Side"
+            ],
+            "date_published": "2025-05-31T11:59:04+01:00",
+            "date_modified": "2025-05-31T12:04:01+01:00"
+        }
+    ]
+}
