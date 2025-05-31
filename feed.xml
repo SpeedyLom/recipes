@@ -3,7 +3,7 @@
     <title>SpeedyLom Recipes</title>
     <link href="https://speedylom.github.io/recipes/feed.xml" rel="self" />
     <link href="https://speedylom.github.io/recipes" />
-    <updated>2025-05-31T12:04:01+01:00</updated>
+    <updated>2025-05-31T12:49:52+01:00</updated>
     <author>
         <name>SpeedyLom</name>
     </author>
@@ -23,21 +23,21 @@
             <summary>
                 <![CDATA[
                         <img src="https://speedylom.github.io/recipes/media/posts/1/rice-2.avif" alt="1kg packet of Tesco basmati rice" />
-                    Portions Tesco basmati rice Uncooked (g) Cooked (g) Carbohydrates (g) 22 70&hellip;
+                    Tesco basmati rice Portions Uncooked (g) Cooked (g) Carbohydrates (g) 22 70&hellip;
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
                     <p><img src="https://speedylom.github.io/recipes/media/posts/1/rice-2.avif" class="type:primaryImage" alt="1kg packet of Tesco basmati rice" /></p>
                 
+    <figure class="post__image post__image--center">
+      <img loading="lazy" src="https://speedylom.github.io/recipes/media/posts/1/rice.avif" height="[object Object]" width="[object Object]" alt="1kg packet of Tesco basmati rice" >
+      <figcaption>Tesco basmati rice</figcaption>
+    </figure>
+
     <h2 id="portions">
       Portions
     </h2>
-
-    <figure class="post__image post__image--center">
-      <img loading="lazy" src="https://speedylom.github.io/recipes/media/posts/1/rice.avif" height="null" width="null" alt="1kg packet of Tesco basmati rice" >
-      <figcaption>Tesco basmati rice</figcaption>
-    </figure>
 <div><table>
     <thead>
         <tr>
