@@ -10,8 +10,8 @@
     },
     "items": [
         {
-            "id": "https://speedylom.github.io/recipes/basmati-rice.html",
-            "url": "https://speedylom.github.io/recipes/basmati-rice.html",
+            "id": "https://speedylom.github.io/recipes/posts/basmati-rice/",
+            "url": "https://speedylom.github.io/recipes/posts/basmati-rice/",
             "title": "Basmati rice",
             "summary": "Tesco basmati rice Portions Uncooked (g) Cooked (g) Carbohydrates (g) 22 70&hellip;",
             "content_html": "\n    <figure class=\"post__image post__image--center\">\n      <img loading=\"lazy\" src=\"https://speedylom.github.io/recipes/media/posts/1/rice.avif\" height=\"[object Object]\" width=\"[object Object]\" alt=\"1kg packet of Tesco basmati rice\" >\n      <figcaption>Tesco basmati rice</figcaption>\n    </figure>\n\n    <h2 id=\"portions\">\n      Portions\n    </h2>\n<div><table>\n    <thead>\n        <tr>\n            <th>Uncooked (g)</th>\n            <th>Cooked (g)</th>\n            <th>Carbohydrates (g)</th>\n          </tr>\n    </thead>\n    <tbody>\n      <tr>\n        <td>22</td>\n        <td>70</td>\n        <td>23</td>\n      </tr>\n      <tr>\n        <td>55</td>\n        <td>170</td>\n        <td>55</td>\n      </tr>\n      <tr>\n        <td>75</td>\n        <td>235</td>\n        <td>76.6</td>\n      </tr>\n    </tbody>\n</table></div>",
